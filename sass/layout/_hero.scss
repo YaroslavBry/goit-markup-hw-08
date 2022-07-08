@@ -1,0 +1,44 @@
+.hero {
+  max-height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0px;
+}
+
+// .team-background {
+//   background-color: var(--background-color-lightgrey);
+// }
+
+.hero__title {
+  font-family: Roboto, sans-serif;
+  color: var(--white-text-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  list-style: none;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+}
+
+.hero__button {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
