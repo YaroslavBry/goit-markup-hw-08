@@ -6,7 +6,11 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
 
-  margin-right: 93px;
+  // @media screen and (min-width: 1200px) {
+  //   // margin-right: auto;
+  //   // align-items: start;
+  //   // margin-right: 93px;
+  // }
 }
 
 .logo-accent {

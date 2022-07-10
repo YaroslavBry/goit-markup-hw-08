@@ -1,3 +1,9 @@
+.whatwedo-container {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .whatwedo {
   text-align: center;
   margin-bottom: 50px;

@@ -1,18 +1,30 @@
 .portfolio-nav {
   display: flex;
+
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+
   color: var(--primaty-text-color);
   list-style: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  justify-content: center;
+  // justify-content: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .portfolio-nav__li {
-  margin-right: 8px;
+  // margin-right: 8px;
+  // margin-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-nav__radiobutton {
@@ -47,6 +59,8 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  // outline: 2px dotted red;
+  width: 450px;
 }
 
 .portfolio-collection {
@@ -63,12 +77,18 @@
 }
 
 .portfolio-card {
-  margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+  // width: 370px;
+
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -89,6 +109,8 @@
 
 .portfolio-card__picture {
   z-index: 2;
+  width: 100%;
+
   .p {
     display: block;
     min-width: 100%;
