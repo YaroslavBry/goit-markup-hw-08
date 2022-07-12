@@ -23,51 +23,122 @@
   <body>
     <!-- --------HEADER-------- -->
 
-    <!-- <header class="header">
-      <nav class="container main-nav">
-        <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
+    <header class="header">
+      <div class="container container-header">
 
-        <ul class="nav list">
-          <li class="nav__item">
-            <a href="./index.html" class="nav__link current">Студия</a>
-          </li>
+        <div class="header-logo">
+          <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
+          
+        </div>
+        
+        <!-- <button type="button" class="mob-menu">
+        <svg class="mob-menu-open">
+          <use href="./images/icons.svg#icon-mob-open">
+          </use>
+        </svg> 
+        </button> -->
 
-          <li class="nav__item">
-            <a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+        <!-- <div class="mobile-menu is-hidden">
 
-          <li class="nav__item">
-            <a href="" class="nav__link">Контакты</a></li>
-        </ul>
+          <button type="button" class="mob-menu-close">
+            <svg class="mob-menu-icon">
+              <use href="./images/icons.svg#icon-mob-close">
+              </use>
+            </svg> 
+          </button>
 
-        <ul class="site-contact list">
-          <li class="site-contact__item">
-            <a href="mailto:info@devstudio.com" class="site-contact__link">
-              <svg class="site-contact__icon" width="16" hight="12">
-                <use href="./images/icons.svg#icon-icon-envelope"></use>
-              </svg>info@devstudio.com
-            </a>
-          </li>
+          <div class="container-mob-menu">
+            <div class="mobile-menu-top">
+            <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link list" href="">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link list" href="">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link list" href="">Контакты</a>
+            </li>
+          </ul>
+          </div>
 
-          <li class="site-contact__item">
-            <a href="tel:+380961111111" class="site-contact__link">
-              <svg class="site-contact__icon" width="10" hight="16">
-                <use href="./images/icons.svg#icon-icon-tel"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-menu-contact">
+            <li class="mobile-menu-contact__tel list">
+              <a href="tel:+380961111111" class="mobile-menu-contact__tel-link list">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-contact__mail list">
+              <a href="mailto:info@devstudio.com" class="mobile-menu-contact__mail-link list">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-soc">
+            <li class="mobile-menu-soc__item">
+              <a href="" class="mobile-menu-soc__item-link list" rel="nofollow noopener noreferrer">Instagram</a>
+            </li>
+            <li class="mobile-menu-soc__item">
+              <a href="" class="mobile-menu-soc__item-link list" rel="nofollow noopener noreferrer">Twitter</a>
+            </li>
+            <li class="mobile-menu-soc__item">
+              <a href="" class="mobile-menu-soc__item-link list" rel="nofollow noopener noreferrer">Facebook</a>
+            </li>
+            <li class="mobile-menu-soc__item">
+              <a href="" class="mobile-menu-soc__item-link list" rel="nofollow noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
+          </div>
+          
+        </div> -->
+        
+        <div class="header-nav">
+          <nav class="main-nav">
+            <ul class="nav list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link current">Студия</a>
+              </li>
 
-      </nav>
-    </header> -->
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+
+              <li class="nav__item">
+                <a href="" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+
+
+
+          <div class="header-contact">
+            <ul class="site-contact list">
+              <li class="site-contact__item">
+                <a href="mailto:info@devstudio.com" class="site-contact__link">
+                  <svg class="site-contact__icon" width="16" hight="12">
+                    <use href="./images/icons.svg#icon-icon-envelope"></use>
+                  </svg>info@devstudio.com
+                </a>
+              </li>
+          
+              <li class="site-contact__item">
+                <a href="tel:+380961111111" class="site-contact__link">
+                  <svg class="site-contact__icon" width="10" hight="16">
+                    <use href="./images/icons.svg#icon-icon-tel"></use>
+                  </svg>+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      
+    </header>
 
     <main>
       <!-- ---------------HERO--------------- -->
 
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ----------------BENEFITS---------------- -->
 
@@ -454,7 +525,7 @@
 
     <!-- ------------Modal window------------- -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="close" data-modal-close>
           <svg width="11" height="11">
@@ -514,7 +585,8 @@
           <button type="submit" class="form__buttom">Отправить</button>
 
         </form>
-  
-     <script src="./js/modal.js"></script> -->
+ 
+     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script> 
   </body>
 </html>

@@ -10,3 +10,22 @@
 .logo-accent--footer {
   color: var(--white-text-color);
 }
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // margin-right: auto;
+    // align-items: start;
+    margin-right: 93px;
+  }
+}
