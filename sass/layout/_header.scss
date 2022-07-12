@@ -79,7 +79,14 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primaty-text-color);
-  // text-decoration: none;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu-nav__link--current {
+  color: var(--accent-color);
 }
 
 .mobile-menu-contact {

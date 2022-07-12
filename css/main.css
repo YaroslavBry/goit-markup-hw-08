@@ -191,6 +191,13 @@ img {
   letter-spacing: 0.02em;
   color: var(--primaty-text-color);
 }
+.mobile-menu-nav__link:hover {
+  color: var(--accent-color);
+}
+
+.mobile-menu-nav__link--current {
+  color: var(--accent-color);
+}
 
 .mobile-menu-contact {
   padding: 0;
@@ -410,6 +417,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 0;
 }
 @media screen and (min-width: 1200px) {
   .logo-footer {
@@ -643,6 +651,7 @@ img {
   background-color: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -656,6 +665,7 @@ img {
   .team-member {
     margin-bottom: 0;
     width: 270px;
+    padding-bottom: 0;
   }
 }
 
@@ -666,7 +676,6 @@ img {
 
 .team-member__contacts {
   margin-top: 30px;
-  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .team-member__contacts {
@@ -844,11 +853,6 @@ img {
   }
 }
 
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 .footer__adress {
   text-align: center;
   color: var(--white-text-color);
@@ -856,7 +860,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -1271,7 +1275,7 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 480px) {
   .modal {
     min-height: 609px;
     width: calc(100% - 30px);
@@ -1412,16 +1416,10 @@ img {
   margin-bottom: 30px;
   margin-top: 20px;
 }
-@media screen and (min-width: 320px) {
-  .form-agreement {
-    flex-wrap: wrap;
-  }
-}
 
 .form-agreement__label {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   display: flex;
@@ -1448,7 +1446,6 @@ img {
   font-size: 11px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  font-weight: 400;
 }
 @media screen and (min-width: 1200px) {
   .form-agreement__link {
