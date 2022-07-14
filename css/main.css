@@ -133,6 +133,11 @@ img {
   background-color: transparent;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 .mob-menu-close {
   position: absolute;
@@ -170,6 +175,12 @@ img {
   padding-left: 40px;
   padding-right: 40px;
   position: fixed;
+  opacity: 1;
+}
+.mobile-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .container-mob-menu {
@@ -432,7 +443,38 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroback.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 200px 0px;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-mob.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-tablet.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header.jpg);
+  }
 }
 
 .hero__title {
@@ -1434,6 +1476,18 @@ img {
   border-radius: 2px;
   margin-right: 8px;
 }
+@media screen and (max-width: 480px) {
+  .form-agreement__label::before {
+    width: 13px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-agreement__label {
+    font-size: 11px;
+    line-height: 1.71;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-agreement__label {
     font-size: 14px;
@@ -1463,6 +1517,11 @@ img {
   background-position: center;
 }
 
+.agreement {
+  display: flex;
+  align-items: center;
+}
+
 .form__buttom {
   display: block;
   margin: 0 auto;
@@ -1483,4 +1542,38 @@ img {
 }
 .form__buttom:hover {
   background: #188ce8;
+}
+
+.chekbox-icon {
+  width: 16px;
+  height: 15px;
+}
+@media screen and (min-width: 480px) {
+  .chekbox-icon {
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+  }
+}
+
+.chekbox-text {
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .chekbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.form-agree {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
