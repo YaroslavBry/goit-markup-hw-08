@@ -451,29 +451,24 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-mob-2x.jpg);
   }
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-mob.jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-tablet-2x.jpg);
-  }
-}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-tablet.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/header-2x.jpg);
   }
 }
 
@@ -490,7 +485,6 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 320px;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -1090,7 +1084,6 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: 12px;
   margin-top: 20px;
   margin-right: 0;
   margin-bottom: 0;
@@ -1478,14 +1471,18 @@ img {
 }
 @media screen and (max-width: 480px) {
   .form-agreement__label::before {
-    width: 13px;
+    display: inline-block;
+    border: 1px solid var(--primaty-text-color);
+    width: 12px;
     height: 12px;
   }
 }
 @media screen and (max-width: 480px) {
   .form-agreement__label {
-    font-size: 11px;
+    display: inline-block;
+    font-size: 12px;
     line-height: 1.71;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1500,6 +1497,13 @@ img {
   font-size: 11px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 480px) {
+  .form-agreement__link {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.71;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-agreement__link {

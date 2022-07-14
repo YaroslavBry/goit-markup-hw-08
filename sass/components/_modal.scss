@@ -175,7 +175,6 @@
   margin-left: auto;
   margin-bottom: 30px;
   margin-top: 20px;
-  // display: flex;
 }
 
 .form-agreement__label {
@@ -186,8 +185,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // display: inline-block;
-  // text-align: center;
 
   &::before {
     content: "";
@@ -198,13 +195,17 @@
     margin-right: 8px;
 
     @media screen and (max-width: 480px) {
-      width: 13px;
+      display: inline-block;
+      border: 1px solid var(--primaty-text-color);
+      width: 12px;
       height: 12px;
     }
   }
   @media screen and (max-width: 480px) {
-    font-size: 11px;
+    display: inline-block;
+    font-size: 12px;
     line-height: 1.71;
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -217,6 +218,12 @@
   font-size: 11px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 480px) {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.71;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
