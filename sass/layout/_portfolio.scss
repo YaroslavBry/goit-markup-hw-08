@@ -1,5 +1,6 @@
 .portfolio-nav {
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 15px;
@@ -9,12 +10,15 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  justify-content: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -72,6 +76,7 @@
   flex-wrap: wrap;
   margin: 0;
   gap: 30px;
+  // width: 100%;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -83,7 +88,8 @@
   // margin-right: 30px;
   // margin-bottom: 30px;
 
-  max-width: 450px;
+  width: 450px;
+  // outline: 1px solid red;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -116,6 +122,8 @@
 
 .portfolio-card__picture {
   z-index: 2;
+  width: 100%;
+
   .p {
     display: block;
     min-width: 100%;

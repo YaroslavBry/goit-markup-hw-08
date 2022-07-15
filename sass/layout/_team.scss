@@ -51,6 +51,10 @@
   }
 }
 
+.team-member:last-child {
+  margin-bottom: 0;
+}
+
 .team-member__picture {
   display: block;
   width: 100%;
